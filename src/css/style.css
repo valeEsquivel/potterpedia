@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Croissant+One&family=Raleway:wght@200&display=swap");
+
+:root {
+  --font-body: Raleway, Helvetica, sans-serif;
+  --font-headline: "Croissant One", "Arial Narrow Bold", sans-serif;
+  /* colors */
+  --primary-color: #d2aa6b;
+  --secondary-color: #52439e;
+  --tertiary-color: #10141b;
+  --light-grey: #d0d0d0;
+  --dark-grey: #303030;
+
+  /* sizes */
+  --font-base: 18px;
+  --small-font: 0.8em;
+  --large-font: 1.2em;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-headline);
+  font-size: var(--font-base);
+  color: var(--dark-grey);
+  background-image: url("../images/fondo.webp");
+  background-color: rgba(255, 255, 255, 0.7);
+  background-blend-mode: lighten;
+}
+
+img {
+  max-width: 100%;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+
+button {
+  padding: 0.5em 2em;
+  background-color: var(--secondary-color);
+  color: white;
+  margin: auto;
+  display: block;
+  border: 0;
+  font-size: var(--large-font);
+  cursor: pointer;
+}
+
+.divider {
+  border-bottom: 2px solid var(--primary-color);
+}
+/* End utility classes */
+
+footer {
+  font-size: var(--small-font);
+  font-family: var(--font-body);
+  padding: 1em;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  background-color: var(--secondary-color);
+  color: var(--light-grey);
+  width: 100% !important;
+}
+
+main #banner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 1em 3.5em 3.5em 3.5em;
+}
+
+#banner img {
+  grid-row: 1 / 3;
+  grid-column: 1/3;
+  width: 100%;
+  height: 500px;
+}
+
+#houses {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 3em;
+  padding: 1em;
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+
+#houses h2 {
+  font-size: 3em;
+  font-family: var(--font-headline);
+  color: var(--primary-color);
+  text-align: center;
+  margin: 0;
+  padding: 1em;
+  padding-bottom: 25px;
+  text-shadow: var(--dark-grey) 2px 2px;
+  grid-row: 1;
+  grid-column: 1/3;
+}
+
+.house {
+  border: 0.75rem solid var(--primary-color);
+  border-style: double;
+  background-color: var(--tertiary-color);
+  color: var(--light-grey);
+  text-align: center;
+  width: 80%;
+}
+
+.house h3 {
+  font-size: 2em;
+  font-family: var(--font-headline);
+  color: var(--light-grey);
+  text-align: center;
+  margin: 0;
+}
+
+.house p {
+  font-size: 1.2em;
+  font-family: var(--font-body);
+  font-weight: bold;
+}
+
+#gryffindor {
+  grid-row: 2/3;
+  grid-column: 1/2;
+}
+
+#ravenclaw {
+  grid-row: 2/3;
+  grid-column: 2/3;
+}
+
+#slytherin {
+  grid-row: 3/4;
+  grid-column: 1/2;
+}
+
+#hufflepuff {
+  grid-row: 3/4;
+  grid-column: 2/3;
+}
+
+#spells {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  padding: 1em;
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  cursor: pointer;
+}
+
+#spells-msg h2 {
+  font-size: 3em;
+  font-family: var(--font-headline);
+  color: var(--primary-color);
+  text-align: center;
+  margin: 0;
+  text-shadow: var(--dark-grey) 2px 2px;
+  grid-row: 1;
+  grid-column: 1;
+}
+
+#spells-box {
+  grid-column: 1/4;
+  grid-row: 1/2;
+  z-index: -1;
+}
+
+#spells-msg {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  margin-top: 225px;
+  z-index: -1;
+}
