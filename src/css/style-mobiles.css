@@ -159,6 +159,8 @@
     padding: 0.3em 0.3em 0.3em 0.5em;
   }
 
+  /******** END OF SPELLS PAGE ********/
+
   footer {
     font-size: 15px;
   }
@@ -171,5 +173,52 @@
   .logo img {
     width: 60px;
     height: 60px;
+  }
+
+  /* Houses Page */
+
+  #main-houses {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1em;
+    padding: 1em;
+  }
+  
+  #house-name {
+    font-size: 2em;
+    font-family: var(--font-headline);
+    color: var(--dark-grey);
+    text-align: center;
+    margin: 0;
+    padding-bottom: 15px;
+    text-shadow: var(--primary-color) 4px 4px;
+  }
+  
+  .character-row {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1em;
+    padding: 0.5em;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+  }
+  
+  .character-card {
+    border: 0.75rem solid var(--primary-color);
+    border-style: double;
+    background-color: var(--tertiary-color);
+    color: var(--light-grey);
+    text-align: center;
+    width: 70%;
+    height: 250px;
+    grid-column: 1/2;
+    font-size: 0.8em;
+  }
+  
+  .character-card img {
+    width: 55%;
+    height: 160px;
   }
 }

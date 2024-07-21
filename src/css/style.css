@@ -144,6 +144,11 @@ main #banner {
   font-weight: bold;
 }
 
+.house a {
+  text-decoration: none;
+  color: var(--light-grey);
+}
+
 #gryffindor {
   grid-row: 2/3;
   grid-column: 1/2;
@@ -242,4 +247,66 @@ table {
 
 #spells-body td {
   padding: 0.5em 0.5em 0.5em 1.5em;
+}
+
+/************************ END SPELLS PAGE **************************/
+
+/*************************** HOUSES PAGE **************************/
+#main-houses {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1em;
+  padding: 1em;
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+
+#house-name {
+  font-size: 3em;
+  font-family: var(--font-headline);
+  color: var(--dark-grey);
+  text-align: center;
+  margin: 0;
+  padding-bottom: 25px;
+  text-shadow: var(--primary-color) 4px 4px;
+}
+
+.character-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1em;
+  padding: 1em;
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+
+.character-card {
+  border: 0.75rem solid var(--primary-color);
+  border-style: double;
+  background-color: var(--tertiary-color);
+  color: var(--light-grey);
+  text-align: center;
+  width: 70%;
+  height: 300px;
+}
+
+.character-card img {
+  width: 60%;
+  height: 200px;
+}
+
+.character-card .col1 {
+  grid-column: 1/2;
+}
+
+.character-card .col2 {
+  grid-column: 2/3;
+}
+
+.character-card .col3 {
+  grid-column: 3/4;
 }

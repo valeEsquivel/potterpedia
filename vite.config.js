@@ -10,6 +10,7 @@ export default defineConfig({
       input: {
         main: resolve(__dirname, "src/index.html"),
         spells: resolve(__dirname, "src/pages/spells.html"),
+        houseCharacters: resolve(__dirname, "src/pages/houseCharacters.html"),
       },
     },
   },

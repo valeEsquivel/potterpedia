@@ -48,3 +48,10 @@ export async function loadHeader() {
 
   renderWithTemplate(headerTemplate, headerElement);
 }
+
+export function getParam(param) {
+  const queryString = window.location.search;
+  const urlParams = new URLSearchParams(queryString);
+  const key = urlParams.get(param);
+  return key;
+}
