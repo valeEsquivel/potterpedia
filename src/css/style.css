@@ -310,3 +310,74 @@ table {
 .character-card .col3 {
   grid-column: 3/4;
 }
+
+.character-card a{
+  text-decoration: none;
+  color: var(--light-grey);
+}
+
+/************************* END HOUSES PAGE *************************/
+
+/************************* CHARACTERS PAGE *************************/
+#main-characters {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1em;
+  padding: 1em;
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+
+#character-name {
+  font-size: 3em;
+  font-family: var(--font-headline);
+  color: var(--dark-grey);
+  text-align: center;
+  margin: 0;
+  padding-bottom: 25px;
+  text-shadow: var(--primary-color) 4px 4px;
+}
+
+#personal-info {
+  display: grid;
+  grid-template-columns: 15% 35% 1fr;
+  grid-gap: 1em;
+  padding: 1em;
+  font-size: 1em;
+  font-weight: bold;
+  color: var(--tertiary-color);
+  font-family: var(--font-body);
+}
+
+.card-imageIC {
+  grid-column: 2/3;
+  border: 0.75rem solid var(--primary-color);
+  border-style: double;
+  background-color: var(--tertiary-color);
+  color: var(--light-grey);
+  text-align: center;
+  width: 70%;
+  height: 400px;
+  align-content: center;
+  justify-items: center;
+}
+
+.card-imageIC img {
+  width: 85%;
+  height: 85%;
+}
+
+.card-body {
+  grid-column: 3/4;
+  justify-items: left;
+  align-items: left;
+  justify-content: left;
+  align-content: left;
+  color: var(--tertiary-color);
+  font-weight: bolder;
+  padding: 1em;
+  background-blend-mode: lighten;
+  background-color: rgba(255, 255, 255, 0.80);
+}

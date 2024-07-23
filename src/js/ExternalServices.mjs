@@ -28,4 +28,10 @@ export default class ExternalServices {
 
     return data;
   }
+
+  async getCharacter(characterID) {
+    const response = await fetch(`${baseURL}character/${characterID}`);
+    const data = await convertToJson(response);
+    return data;
+  }
 }

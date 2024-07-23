@@ -11,7 +11,7 @@ function drawCards(data) {
       let character = data[i * 3 + j];
       if (character) {
         if (character.image === "") {
-          if (character.gender === 'male') {
+          if (character.gender === "male") {
             image = "../images/wizard.jpg";
           } else {
             image = "../images/witch.jpg";
@@ -20,10 +20,13 @@ function drawCards(data) {
           image = character.image;
         }
 
-        cards += `<div class="character-card col${j + 1}" id="${character.id}">
-                        <img src="${image}" alt="${character.name}" />
-                        <h3>${character.name}</h3>
-                    </div>`;
+        cards += `
+        <div class="character-card col${j + 1}" id="${character.id}">
+          <a href="/pages/information.html?character=${character.id}">
+            <img src="${image}" alt="${character.name}" />
+            <h3>${character.name}</h3>
+          </a>
+        </div>`;
       }
     }
     cards += `</div>`;

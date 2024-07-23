@@ -169,7 +169,7 @@
     line-height: 30px;
     width: 135px;
   }
-  
+
   .logo img {
     width: 60px;
     height: 60px;
@@ -183,7 +183,7 @@
     grid-gap: 1em;
     padding: 1em;
   }
-  
+
   #house-name {
     font-size: 2em;
     font-family: var(--font-headline);
@@ -193,7 +193,7 @@
     padding-bottom: 15px;
     text-shadow: var(--primary-color) 4px 4px;
   }
-  
+
   .character-row {
     display: grid;
     grid-template-columns: 1fr;
@@ -204,7 +204,7 @@
     justify-content: center;
     align-content: center;
   }
-  
+
   .character-card {
     border: 0.75rem solid var(--primary-color);
     border-style: double;
@@ -216,9 +216,56 @@
     grid-column: 1/2;
     font-size: 0.8em;
   }
-  
+
   .character-card img {
     width: 55%;
     height: 160px;
+  }
+
+  /************************* CHARACTERS PAGE *************************/
+  #main-characters {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  #character-name {
+    font-size: 2em;
+    padding-bottom: 15px;
+  }
+
+  #personal-info {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1em;
+    padding: 0.5em;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .card-imageIC {
+    grid-column: 1;
+    grid-row: 1/2;
+    border: 0.75rem solid var(--primary-color);
+    border-style: double;
+    background-color: var(--tertiary-color);
+    color: var(--light-grey);
+    text-align: center;
+    width: 70%;
+    height: 250px;
+    grid-column: 1/2;
+    font-size: 0.8em;
+  }
+
+  .card-imageIC img {
+    width: 85%;
+    height: 85%;
+  }
+
+  .card-body {
+    grid-column: 1;
+    grid-row: 2/3;
+    width: 70%;
   }
 }
